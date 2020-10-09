@@ -3,289 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Spotifyweb</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <main>
-        <div class="container display-flex">
-            <!-- ASIDE BAR -->
-            <div class="aside-bar">
-                <ul class="aside-top-list-menu">
-                    <li>
-                        <i class="fas fa-home"></i>
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fas fa-search"></i>
-                        <a href="#">
-                            Cerca
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            La Tua Libreria
-                        </a>
-                    </li>
-                </ul>
 
-                <!-- PLAYLIST ASIDE LIST -->
-                <h4>PLAYLIST</h4>
-                <ul class="playlist-aside-list">
-                    <li>
-                        <i class="fas fa-plus"></i>
-                        <a href="#">
-                            Crea Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Root -->
+    <div class="app">
 
-            <!-- LAYOUT CONTENT -->
-            <div class="container-right">
-                <div class="top-upgrade-menu text-center">
-                    <span>top upgrade menu</span>
-                </div>
-                
-                <div class="menu-main-top text-center">
-                    <ul class="menu-main-ul">
+        <!-- Main Window-->
+        <main class="main-window">
+
+            <!-- Sidebar -->
+            <aside class="aside-bar">
+                <!-- Top sidebar -->
+                <div class="sidebar-top">
+                    <img class="logo-aside" src="./img/logo.svg" alt="">
+
+                    <!-- Sidebar top ul -->
+                    <ul class="sidebar-top-list">
                         <li>
                             <a href="#">
-                                in evidenza
+                                <img src="./img/home.svg" alt="">
+                                <span>Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                podcast
+                                <img src="./img/search.svg" alt="">
+                                <span>Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                classifiche
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                generi e mood
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                nuove uscite    
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                scopri
+                                <img src="./img/libreria.svg" alt="">
+                                <span>La tua Libreria</span>
                             </a>
                         </li>
                     </ul>
-                </div>
-               
-                <!-- INIZIO CONTENUTO SCROLLABILE -->
-                <div class="content-container">  
-                    <div class="content-main">
-                        <h2>Recently played</h2>
-                        <!-- SECTION DEI BOX MAIN -->
-                        <section class="box">
-                            <!-- FIRST ROW BOX -->
-                            <div>
-                                <div class="box-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="box-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="box-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="box-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div class="last-two-first-desktop">
-                                <div class="box-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div class="last-two-first-desktop">
-                                <div class="box-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                        </section>
 
-                        <!-- LAST TWO IMAGE FIRST ROW PER 1024PX -->
-                        <div class="row-1024">
-                            <div>
-                                <div class="box-row"></div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="box-row"></div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- BOX VERSIONE TABLET -->
-                        <div class="tablet-box">
-                            <div>
-                                <div class="box-row"></div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="box-row"></div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                        </div>    
-                        <div class="tablet-box">
-                            <div>
-                                <div class="box-row"></div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="box-row"></div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SECOND ROW BOX -->
-                        <h2>Creato per John Doe</h2>
-                        <span class="under-line-h2">
-                            Più ascolti, più accurati saranno i suggerimenti
-                        </span>
-                        <section class="box">
-                            <div class="second-row-box">
-                                <div class="box-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="box-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- THIRD ROW BOX -->
-                        <h2>Artisti più popolari</h2>
-                        <span class="under-line-h2">
-                            Più ascolti, più accurati saranno i suggerimenti
-                        </span>
-                        <section class="box">
-                            <div>
-                                <div class="box-row box-third-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="box-row box-third-row">
-                                </div>
-                                <div class="row">
-                                    <h3>Heavy Metal</h3>
-                                    <span>Subtitle</span>
-                                </div>
-                            </div>
-                        </section>
+                    <!-- Playlist -->
+                    <h3 class="playlist-h3">Playlist</h3>
+                    <!-- Sidebar second list -->
+                    <ul class="sidebartop-second-list">
+                        <li class="second-list-items">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
                     </div>
-                </div>
-            </div> 
-        </div>
 
-        <!-- FOOTER BAR -->
-        <div class="footer-bar text-center">
-            <span>Footer Bar</span>
-        </div>
-    </main>
+                <!-- Bottom sidebar -->
+                <div class="sidebar-bottom">
+                    Install app
+                </div>
+            </aside>
+
+            <!-- Content -->
+            <section class="content">
+                 <!-- CTA -->
+                 <div class="content-top-bar">
+                     Top bar here
+                 </div>
+
+                <!-- Scrollable -->
+                <div class="scrollable">
+
+                    <!-- Menu main bar -->
+                    <nav class="menu-main-bar">
+                        <ul class="menu-main-list">
+                            <li>
+                                <a href="#">In evidenza</a>
+                            </li>
+                            <li>
+                                <a href="#">Podcast</a>
+                            </li>
+                            <li>
+                                <a href="#">Classifiche</a>
+                            </li>
+                            <li>
+                                <a href="#">Generi e Mood</a>
+                            </li>
+                            <li>
+                                <a href="#">Nuove Uscite</a>
+                            </li>
+                            <li>
+                                <a href="#">Scopri</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Content category -->
+                    <section class="content-category">
+                        <!-- First Album row -->
+                        <h2>Recently played</h2>
+                        <ul class="album-list">
+                            <li class="album">
+                                <a href="#">
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                    <h4>Heavy Metal</h4>
+                                    <span>Subtitle</span>
+                                </a>
+                            </li>
+                            <li class="album">
+                                <a href="#">
+                                    <img src="./img/stranger.jpeg" alt="">
+                                    <h4>Stranger Things, Vol.1(a Netflix Original Series Sountrack)</h4>
+                                    <span>Kyle Dixon & Micheal Stein</span>
+                                </a>
+                            </li>
+                            <li class="album">
+                                <a href="#">
+                                    <img src="./img/aquietplace.jpeg" alt="">
+                                    <h4>A quiet place</h4>
+                                    <span>Subtitle</span>
+                                </a>
+                            </li>
+                            <li class="album">
+                                <a href="#">
+                                    <img src="./img/split.jpeg" alt="">
+                                    <h4>Split</h4>
+                                    <span>Subtitle</span>
+                                </a>
+                            </li>
+                            <li class="album">
+                                <a href="#">
+                                    <img src="./img/cure.jpeg" alt="">
+                                    <h4>A cure for wellness</h4>
+                                    <span>Subtitle</span>
+                                </a>
+                            </li>
+                            <li class="album">
+                                <a href="#">
+                                    <img src="./img/sinister.jpeg" alt="">
+                                    <h4>Sinister</h4>
+                                    <span>Subtitle</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Second album row -->
+                    <section class="content-category">
+                        <h2>Creato per John Doe</h2>
+                        <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                        <ul class="album-list">
+                            <li class="album">
+                                <a href="#">
+                                    <img src="./img/radar.jpeg" alt="">
+                                    <h4>Release Radar</h4>
+                                </a>
+                            </li>
+                            <li class="album">
+                                <a href="#">
+                                    <img src="./img/mixdaily.jpeg" alt="">
+                                    <h4>Daily Mix 1</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Third album row -->
+                    <section class="content-category">
+                        <h2>Artisti più popolari</h2>
+                        <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                        <ul class="album-list">
+                            <li class="album">
+                                <a href="#">
+                                    <img class="last-row" src="./img/young.jpeg" alt="">
+                                    <h4>Ludovico Enaudi</h4>
+                                    
+                                </a>
+                            </li>
+                            <li class="album">
+                                <a href="#">
+                                    <img class="last-row" src="./img/einaudi.jpeg" alt="">
+                                    <h4>Lana Del Rey</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer player -->
+        <footer class="player">Player
+
+        </footer>
+    </div>
 </body>
 </html>
