@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotifyweb</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- MAIN CSS -->
@@ -11,20 +13,20 @@
 </head>
 <body>
 
-    <!-- Root -->
+    <!-- ROOT -->
     <div class="app">
 
-        <!-- Main Window-->
+        <!-- MAIN WINDOW -->
         <main class="main-window">
 
-            <!-- Sidebar -->
+            <!-- SIDEBAR -->
             <aside class="aside-bar">
-                <!-- Top sidebar -->
+                <!-- TOP SIDEBAR -->
                 <div class="sidebar-top">
-                    <img class="logo-aside" src="./img/logo.svg" alt="">
+                    <img class="logo-aside no-600px" src="./img/logo.svg" alt="">
 
-                    <!-- Sidebar top ul -->
-                    <div class="sidebar-top-list">
+                    <!-- SIDEBAR TOP UL -->
+                    <div class="sidebar-top-list no-600px">
                         <ul class="sidebar-top-ul-img">
                             <li>
                                 <a href="#">
@@ -48,10 +50,36 @@
                         </ul>
                     </div>
 
-                    <!-- Playlist -->
-                    <h3 class="playlist-h3">Playlist</h3>
-                    <!-- Sidebar second list -->
-                    <ul class="sidebartop-second-list">
+                    <!-- SIDEBAR TOP ONLY FOR 600PX -->
+                    <div class="sidebar-top-600px no-desktop no-1024px">
+                        <ul class="sidebar-top-600px-img">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-spotify"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/home.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/search.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/libreria.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- PLAYLIST -->
+                    <h3 class="playlist-h3 no-600px">Playlist</h3>
+                    <!-- SIDEBAR SECOND LIST -->
+                    <ul class="sidebartop-second-list no-600px">
                         <li class="second-list-items">
                             <a href="#">
                                 <i class="fas fa-plus"></i>
@@ -82,8 +110,8 @@
                     </ul>
                 </div>
 
-                <!-- Bottom sidebar -->
-                <div class="sidebar-bottom">
+                <!-- BOTTOM SIDEBAR -->
+                <div class="sidebar-bottom no-600px">
                     <ul class="sidebar-bottom-list">
                         <li>
                             <a href="#">
@@ -100,19 +128,35 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- SIDEBAR BOTTOM ONLY FOR 600PX -->
+                <div class="sidebar-bottom-600px no-desktop no-1024px">
+                    <ul class="">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-arrow-circle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/profile.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </aside>
 
-            <!-- Content -->
+            <!-- CONTENT -->
             <section class="content">
-                 <!-- Content top bar -->
+                 <!-- CONTENT TOP BAR -->
                  <div class="content-top-bar">
                      <a href="#">EFFETTUA L'UPGRADE</a>
                  </div>
 
-                <!-- Scrollable -->
+                <!-- SCROLLABLE -->
                 <div class="scrollable">
 
-                    <!-- Menu main bar -->
+                    <!-- MENU MAIN BAR -->
                     <nav class="menu-main-bar">
                         <ul class="menu-main-list">
                             <li>
@@ -127,18 +171,30 @@
                             <li>
                                 <a href="#">Generi e Mood</a>
                             </li>
-                            <li>
+                            <li class="no-600px">
                                 <a href="#">Nuove Uscite</a>
                             </li>
-                            <li>
+                            <li class="no-600px">
                                 <a href="#">Scopri</a>
                             </li>
                         </ul>
                     </nav>
 
-                    <!-- Content category -->
+                    <!-- MENU MAIN BAR ONLY FOR 600PX -->
+                    <nav class="menu-main-bar-600px">
+                        <ul class="menu-main-list">
+                            <li class="no-desktop no-1024px">
+                                <a href="#">Nuove Uscite</a>
+                            </li>
+                            <li class="no-desktop no-1024px">
+                                <a href="#">Scopri</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- CONTENT CATEGORY -->
                     <section class="content-category">
-                        <!-- First Album row -->
+                        <!-- FIRST ALBUM ROW -->
                         <h2>Recently played</h2>
                         <ul class="album-list">
                             <li class="album">
@@ -167,7 +223,9 @@
                                             </a>       
                                         </div>
                                         <h4>Stranger Things, Vol. 1 ( a Netlifx Original Series Soundtrack</h4>
-                                        <span class="albums-bottom-span">Kyle Dixon & Michael Stein</span>
+                                        <span class="albums-bottom-span">
+                                            Kyle Dixon & Michael Stein
+                                        </span>
                                     </a>
                                 </div>
                             </li>
@@ -201,6 +259,42 @@
                                     </a>
                                 </div>
                             </li>
+                            <li class="album no-1024px no-600px">
+                                <div class="album-hover-btn">
+                                    <a href="#">
+                                        <img src="./img/cure.jpeg" alt="">
+                                        <div class="icon-play-hover">
+                                            <a href="#">
+                                                <i class="far fa-play-circle">
+                                                </i>       
+                                            </a>       
+                                        </div>
+                                        <h4>A cure for wellness</h4>
+                                        <span class="albums-bottom-span">Subtitle</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="album no-1024px no-600px">
+                                <div class="album-hover-btn">
+                                    <a href="#">
+                                        <img src="./img/sinister.jpeg" alt="">
+                                        <div class="icon-play-hover">
+                                            <a href="#">
+                                                <i class="far fa-play-circle">
+                                                </i>       
+                                            </a>       
+                                        </div>
+                                        <h4>Sinister</h4>
+                                        <span class="albums-bottom-span">Subtitle</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- FIRST ROW ALBUM SECTON PER 1024PX -->
+                    <section class="content-category no-desktop only-1024">
+                        <ul class="album-list">
                             <li class="album">
                                 <div class="album-hover-btn">
                                     <a href="#">
@@ -234,7 +328,77 @@
                         </ul>
                     </section>
 
-                    <!-- Second album row -->
+                    <!-- FIRST ROW ALBUM SECTION PER 600PX -->
+                    <section class="content-category no-desktop">
+                        <ul class="album-list">
+                            <li class="album">
+                                <div class="album-hover-btn">
+                                    <a href="#">
+                                        <img src="./img/aquietplace.jpeg" alt="">
+                                        <div class="icon-play-hover">
+                                            <a href="#">
+                                                <i class="far fa-play-circle">
+                                                </i>       
+                                            </a>       
+                                        </div>
+                                        <h4>A quiet place</h4>
+                                        <span class="albums-bottom-span">Subtitle</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="album">
+                                <div class="album-hover-btn">
+                                    <a href="#">
+                                        <img src="./img/split.jpeg" alt="">
+                                        <div class="icon-play-hover">
+                                            <a href="#">
+                                                <i class="far fa-play-circle">
+                                                </i>       
+                                            </a>       
+                                        </div>
+                                        <h4>Split</h4>
+                                        <span class="albums-bottom-span">Subtitle</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content-category no-desktop">
+                        <ul class="album-list">
+                            <li class="album no-1024px">
+                                <div class="album-hover-btn">
+                                    <a href="#">
+                                        <img src="./img/cure.jpeg" alt="">
+                                        <div class="icon-play-hover">
+                                            <a href="#">
+                                                <i class="far fa-play-circle">
+                                                </i>       
+                                            </a>       
+                                        </div>
+                                        <h4>A cure for wellness</h4>
+                                        <span class="albums-bottom-span">Subtitle</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="album no-1024px">
+                                <div class="album-hover-btn">
+                                    <a href="#">
+                                        <img src="./img/sinister.jpeg" alt="">
+                                        <div class="icon-play-hover">
+                                            <a href="#">
+                                                <i class="far fa-play-circle">
+                                                </i>       
+                                            </a>       
+                                        </div>
+                                        <h4>Sinister</h4>
+                                        <span class="albums-bottom-span">Subtitle</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                   
+                    <!-- SECOND ALBUM ROW -->
                     <section class="content-category">
                         <h2>Creato per John Doe</h2>
                         <p>Più ascolti, più accurati saranno i suggerimenti</p>
@@ -270,7 +434,7 @@
                         </ul>
                     </section>
 
-                    <!-- Third album row -->
+                    <!-- THIRD ALBUM ROW -->
                     <section class="content-category">
                         <h2>Artisti più popolari</h2>
                         <p>Più ascolti, più accurati saranno i suggerimenti</p>
@@ -309,9 +473,9 @@
             </section>
         </main>
 
-        <!-- Footer player -->
+        <!-- FOOTER PLAYER -->
         <footer class="player">
-            <!-- Player album -->
+            <!-- PLAYER ALBUM -->
             <div class="player-album">
                 <img src="./img/sinister.jpeg" alt="">
                 <ul class="album-list"> 
@@ -326,7 +490,7 @@
                 <i class="far fa-folder"></i>
             </div>
 
-            <!-- Controller -->
+            <!-- CONTROLLER -->
             <div class="player-controller">
                 <div class="controller-icons">
                     <i class="fas fa-random"></i>
@@ -336,7 +500,7 @@
                     <i class="fas fa-redo"></i>
                 </div>
 
-                <!-- Minutes bar -->
+                <!-- MINUTES BAR -->
                 <div class="minutes-bar">
                     <span>0:25</span>
                     <hr class="first-hr">
@@ -344,8 +508,8 @@
                     <span class="minute-last-span">4:35</span>
                 </div>
             </div>
-            
-            <!-- Audio -->
+
+            <!-- AUDIO -->
             <div class="player-audio">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-desktop"></i>
